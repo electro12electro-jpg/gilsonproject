@@ -1,0 +1,151 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: var(--color-texto); }
+img { max-width: 100%; height: auto; }
+
+:root {
+  --color-principal: #6e6d24;
+  --color-texto: #0e0505;
+  --ancho-max: 1140px;
+}
+.header {
+  background-color: var(--color-principal);
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+.hero {
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  text-align: center;
+}
+.promociones {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-size: 22px;
+}
+.menu a:hover {
+  color: var(--color-principal);
+}
+.hambuerguesa {
+  display: none;
+  background-color: var(--color-principal);
+  color: #0d5525;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+}
+.hambuerguesa span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #1c7980;
+  margin: 5px 0;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.hero {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  background-color: var(--color-principal);
+
+}
+.footer p {
+  color: var(--color-texto);
+  text-decoration: none;
+}
+.redes {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+.tarjeta {
+  background-color: #867617;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 400px;
+}
+.tarjeta:hover {
+  transform: translateY(-4px);
+}
+@media (min-width: 701px) { .tarjeta { width: calc(50% - .5rem); } }
+@media (min-width: 991px) { .tarjeta { width: calc(33.333% - .67rem); } }
+
+.accordion .titulo {
+  width: 100%;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1.2rem;
+  background-color: var(--color-principal);
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  }
+  .accordion .contenido {
+  display: none;
+  padding: 1rem;
+  }
+  .accordion .item.activo .contenido {
+  display: block;
+  }
+  /* base: celular */
+.menu { display: none; }        /* lo abrirá la hamburguesa */
+
+@media (min-width: 501px) {
+  .portada h1 { font-size: 2.1rem; }
+}
+
+@media (min-width: 701px) {
+  .portada { padding: 4rem 2rem; }
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+@media (min-width: 991px) {
+  .menu { display: block; }       /* menú normal en pantalla grande */
+  .hamburguesa { display: none; }
+  .portada h1 { font-size: 2.6rem; }
+}
