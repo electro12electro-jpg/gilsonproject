@@ -68,5 +68,5 @@
                     <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
                 </ul>
             </footer>
-    <script src="script.js"></script>
+    <script src="javascript/main.js" defer></script>
 </html>

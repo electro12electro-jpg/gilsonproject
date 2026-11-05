@@ -50,7 +50,7 @@
                 <ul class="redes"
                 <li></li>><a href="#"><img src="facebook.png" alt="Facebook"></a></li>
                 <li><a href="#"><img src="twitter.png" alt="Twitter"></a></
-    <script src="script.js"></script>
+    <script src="javascript/main.js" defer></script>
 </html>
 </ul>   
 
